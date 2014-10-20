@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LaboratorioAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_send">Agregar Platillo</string>
+    <string name="action_settings">Settings</string>
+    <string name="descripcion_platillo">Descripción:</string>
+    <string name="descripcion_platillo_hint">descripción del platillo</string>
+    <string name="pais_platillo">Tipo:</string>
+    <string name="pais_platillo_hint">tipo de platillo</string>
+    <string name="nombre_platillo">Nombre:</string>
+    <string name="nombre_platillo_hint">nombre del platillo</string>
+    <string name="agregar_platillo">Agregar Platillo</string>
+    <string name="title_activity_save_data">SaveData</string>
+    <string name="tab1">Save Data</string>
+
+</resources>
