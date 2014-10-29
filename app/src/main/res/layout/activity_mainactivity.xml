@@ -17,7 +17,10 @@
         android:cacheColorHint="#ff717171"
         android:divider="#ffa8a8a8"
         android:footerDividersEnabled="false"
-        android:headerDividersEnabled="false" />
+        android:headerDividersEnabled="false"
+        android:layout_above="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
 
 
     <Button
@@ -27,6 +30,8 @@
         android:onClick="sendMessage"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button"
+        android:textSize="10dp" />
 
 </RelativeLayout>

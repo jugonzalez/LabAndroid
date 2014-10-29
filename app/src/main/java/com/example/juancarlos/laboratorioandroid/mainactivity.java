@@ -1,7 +1,12 @@
 package com.example.juancarlos.laboratorioandroid;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.*;
@@ -9,14 +14,23 @@ import android.content.Intent;
 import com.parse.Parse;
 import android.view.View;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+
 public class mainactivity extends Activity {
 
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+
+
+    Button btnSelectImage;
+    TextView txtUriPath,txtRealPath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainactivity);
+
+        Intent intentt = getIntent();
 
         Parse.initialize(this, "tZoFQTdRpC3YplsyJxJxWOIsRUGaZV4NYYRUTiVD", "U6tiTlBS0BiWJqpwuv5r3eMf3MMRHskEecfTvjUT");
 
@@ -25,6 +39,8 @@ public class mainactivity extends Activity {
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(foodAdapter);
+        // get reference to views
+
         foodAdapter.loadObjects();
 
     }
